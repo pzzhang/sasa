@@ -1,0 +1,60 @@
+# Copyright (c) Microsoft. All rights reserved.
+DATA:
+  DATASET: 'wikitext-2'
+  PATH: './datasets/wikitext-2'
+  DATA_DIR: './datasets/wikitext-2'
+LOSS: 'xentropy'
+DATALOADER:
+  BSZ: 20
+  RE: 'no'
+  WORKERS: 4
+OPTIM:
+  OPT: 'qhm'
+  LR: 20.0
+  MOM: 0.0
+  NU: 1.0
+  WD: 0.0
+  EPOCHS: 40
+  WARMUP: 0
+  DROP_FREQ: 100
+  DROP_FACTOR: 4.0
+  VAL: 1
+  ADAM:
+    BETA1: 0.9
+    BETA2: 0.999
+  SASA:
+    LEAKY_RATIO: 4
+    SIGMA: 0.01
+    N: 1000
+    DELTA: 0.02
+    MODE: 'olbm'
+    LOGSTATS: 10
+    TESTS_PER_EPOCH: 1
+  LS:
+    GAMMA: 0.01
+    SDC: 0.1
+    INC: 2.0
+    DEC: 0.5
+    MAX: 10
+    IGN: 0
+    EVAL: 1
+MODEL:
+  ARCH: "LSTM"
+  NONLINEARITY: "celu"
+  MODEL_PATH: ""
+  PRETRAINED: False
+  RNN:
+    EMSIZE: 1500
+    NHID: 1500
+    NLAYERS: 2
+    BPTT: 35
+    DROPOUT: 0.65
+    TIED: True
+    CLIP: 0.25
+    SHUFFLE: 0
+    INIT0: 0
+OUTPUT_DIR: "/tmp"
+BACKUP_LOG_DIR: ""
+LOG_FREQ: 20
+EVALUATE: False
+ONLY_SAVE_LAST: 0
