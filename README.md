@@ -4,7 +4,7 @@
  
  [Using Statistics to Automate Stochastic Optimization](http://papers.nips.cc/paper/9150-using-statistics-to-automate-stochastic-optimization) (SASA)
  
- [Statistical Adaptive Stochastic Optimization](https://openreview.net/forum?id=B1gkpR4FDB) (SASA+ and SSLS)
+ [Statistical Adaptive Stochastic Gradient Methods](https://arxiv.org/pdf/2002.10597.pdf) (SASA+ and SSLS)
  
  By providing several convenient tools (supporting various public datasets, supporting tensorboard,
  checkpointing, etc), we also hope that this repo can help researchers 
